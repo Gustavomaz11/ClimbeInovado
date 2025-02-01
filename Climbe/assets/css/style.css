@@ -12118,7 +12118,6 @@ footer .widget-newsletter form {
 
 .contat-heading {
 	cursor: pointer;
-
 }
 
 .contat-heading h3 {
@@ -12126,8 +12125,20 @@ footer .widget-newsletter form {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	gap: 20px;
+	
 }
+
+.contat-heading h3 i{
+	font-size: 3rem !important;
+	color: #39c6bb;
+	transition: .4s ease;
+}
+
+.contat-heading h3 i:hover {
+	color: #f1f1f1;
+}
+
+
 
 .stars {
     display: inline-flex;
@@ -12211,3 +12222,21 @@ footer .widget-newsletter form {
 	margin: .5rem 3rem;
 }
 
+/* .wpp {
+	width: min-content !important;
+	border-radius: 50% 50% 0 0;
+	background-color: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+
+
+} */
+
+/* .wpp2 {
+	width: min-content !important;
+	border-radius: 50% 50% 0 0;
+	background-color: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+
+} */

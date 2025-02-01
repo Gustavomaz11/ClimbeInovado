@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressCircle = document.querySelector(".autoplay-progress svg");
     const progressContent = document.querySelector(".autoplay-progress span");
     const starsContainer = document.getElementById('stars-container');
+    const wpp2 = document.querySelector('#back-to-top')
 
     // Verifica se o elemento existe antes de manipular
     if (starsContainer) {
@@ -52,16 +53,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Redirecionamento para o WhatsApp
-    const heading = document.querySelector('.contat-heading h3');
+    const heading = document.querySelectorAll('.wpp');
+    wpp2.addEventListener('click', () => {
+        const numero = '5579991063816';
+        const mensagem = encodeURIComponent('Olá, gostaria de mais informações');
+        const wpp = `https://wa.me/${numero}?text=${mensagem}`;
+
+        window.open(wpp, '_blank')
+    })
     if (heading) {
-        heading.addEventListener('click', () => {
-            const numero = '5579996701239';
+        heading.forEach(h => h.addEventListener('click', () => {
+            const numero = '5579991063816';
             const mensagem = encodeURIComponent('Olá, gostaria de mais informações');
             const wpp = `https://wa.me/${numero}?text=${mensagem}`;
 
             window.location.href = wpp;
-        });
+        }))
     } else {
-        console.error("Elemento .contat-heading h3 não encontrado no DOM.");
+        console.error("Elemento .wpp não encontrado no DOM.");
     }
 });
