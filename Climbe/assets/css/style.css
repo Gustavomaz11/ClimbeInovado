@@ -3245,7 +3245,7 @@ ul.dropdown-menu > li.has-dropdown > a:before {
 .navbar-nav > li.has-dropdown > ul.dropdown-menu,
  .navbar-nav > li.has-dropdown > ul.mega-menu,
  li.dropdown-submenu > ul.mega-menu {
-	background-color: #1b1a1a;
+	background-color: #f1f1f1;
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
 	transition: all 0.4s ease;
@@ -12187,5 +12187,27 @@ footer .widget-newsletter form {
 	flex-direction: column;
 	justify-content: space-between;
 	min-height: 100px;
+}
+
+@media(max-width: 412px) {
+	.navbar-nav ul {
+		background-color: #f8f9fa !important;
+		min-width: 350px ;
+	}
+
+	.copyright {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.lyrics p {
+	text-align: justify;
+	margin: .5rem 3rem;
+}
+
+.lyrics ol li {
+	text-align: justify;
+	margin: .5rem 3rem;
 }
 
