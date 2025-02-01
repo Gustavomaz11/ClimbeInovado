@@ -85,6 +85,12 @@ To make it easy to update your theme, you should not edit the styles in this fil
 the custom.css file to add your styles. You can copy a style from this file and paste it in 
 custom.css and it will override the style in this file. You have been warned! :)
 */
+
+
+:root {
+	--fonte-principal: url('fonts/avenir/AvenirLTStd-Black.otf');
+}
+
 body,
 html {
 	overflow-x: hidden;
@@ -96,7 +102,6 @@ html {
 
 body {
 	background-color: #ffffff;
-	font-family: 'Roboto', sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	color: #9b9b9b;
@@ -198,7 +203,7 @@ h4,
 h5,
 h6 {
 	color: #282828;
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	font-weight: 700;
 	margin: 0 0 28px;
 	line-height: 1;
@@ -330,11 +335,11 @@ p {
 }
 
 .font-heading {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 }
 
 .font-body {
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fonte-principal);
 }
 
 .font-18 {
@@ -1126,7 +1131,7 @@ section {
 .blockquote,
 blockquot {
 	font-size: 20px;
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	color: #9b9b9b;
 	font-style: italic;
 	line-height: 28px;
@@ -1136,7 +1141,7 @@ blockquot {
 }
 
 .quote-author {
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fonte-principal);
 	display: block;
 	font-size: 13px;
 	font-style: normal;
@@ -1163,7 +1168,7 @@ blockquot {
 
 .blockquote-2:after,
 .blockquote-2:before {
-	font-family: fontawesome;
+	font-family: var(--fonte-principal);
 	font-size: 16px;
 	position: absolute;
 	color: #282828;
@@ -1247,7 +1252,7 @@ blockquot {
 	background-repeat: no-repeat;
 	background-position: center center;
 	width: 100%;
-	height: 100%;
+	height: 110vh;
 }
 
 .bg-parallax {
@@ -1374,7 +1379,7 @@ blockquot {
     #BUTTONS
 \*------------------------------------*/
 .btn {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	position: relative;
 	z-index: 2;
 	font-size: 14px;
@@ -1905,7 +1910,7 @@ ul.dot-list li:before {
 	position: absolute;
 	top: 4px;
 	left: 0;
-	font-family: fontawesome;
+	font-family: var(--fonte-principal);
 	font-size: 7px;
 	color: #39c6bb;
 }
@@ -2130,7 +2135,7 @@ ul.dot-list li:before {
 }
 
 .accordion .card .card-heading a {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	font-size: 16px;
 	color: #39c6bb;
 	font-weight: 600;
@@ -2158,7 +2163,7 @@ ul.dot-list li:before {
 	top: 0;
 	content: "\f068";
 	/* symbol for "opening" cards */
-	font-family: fontawesome;
+	font-family: var(--fonte-principal);
 	font-size: 9px;
 	color: #ffffff;
 	background-color: #39c6bb;
@@ -2213,7 +2218,7 @@ ul.dot-list li:before {
 .pagination > li > span {
 	background-color: transparent;
 	color: #9b9b9b;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fonte-principal);
 	font-size: 20px;
 	font-weight: 700;
 	border: 2px solid #efefef;
@@ -2289,7 +2294,7 @@ ul.dot-list li:before {
 }
 
 .alerts .alert-content p {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	color: #9b9b9b;
 	font-size: 12px;
 	font-weight: 500;
@@ -2706,7 +2711,7 @@ table tbody tr td {
     #Heading
 \*------------------------------------*/
 .heading .heading--subtitle {
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fonte-principal);
 	color: #39c6bb;
 	font-size: 14px;
 	font-weight: 700;
@@ -2715,7 +2720,7 @@ table tbody tr td {
 }
 
 .heading .heading--title {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	font-size: 36px;
 	font-weight: 600;
 	line-height: 45px;
@@ -2978,7 +2983,7 @@ table tbody tr td {
 }
 
 .navbar-nav > li > a {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	font-size: 14px;
 	text-transform: capitalize;
 	font-weight: 700;
@@ -3034,7 +3039,8 @@ table tbody tr td {
 
 li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > a:before,
 ul.dropdown-menu > li.has-dropdown > a:before {
-	font-family: fontawesome;
+	font-family: var(--fonte-principal);
+
 	content: "\f105";
 	font-size: 13px;
 	position: absolute;
@@ -3142,7 +3148,8 @@ ul.dropdown-menu > li.has-dropdown > a:before {
 }
 
 .navbar-nav .has-dropdown:after {
-	font-family: fontawesome;
+	font-family: var(--fonte-principal);
+
 	content: "\f105";
 	font-size: 14px;
 	position: absolute;
@@ -3330,7 +3337,7 @@ ul.mega-menu li ul li {
 
 ul.dropdown-menu li a,
  ul.mega-menu li ul li a {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	line-height: 40px;
 	color: #9b9b9b;
 	padding: 0;
@@ -3849,7 +3856,8 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 	top: 0;
 	content: "\f002";
 	color: #ffffff;
-	font-family: FontAwesome;
+	font-family: var(--fonte-principal);
+
 	font-size: 28px;
 	font-weight: 400;
 	line-height: 70px;
@@ -3858,7 +3866,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 .module--search-box .form-control {
 	position: relative;
 	color: #ffffff;
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	font-size: 45px;
 	font-weight: 400;
 	font-style: italic;
@@ -3930,7 +3938,8 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 }
 
 .cart-box .cart-overview li .cart-cancel:after {
-	font-family: fontawesome;
+	font-family: var(--fonte-principal);
+
 	content: "\f00d";
 	font-size: 12px;
 	position: absolute;
@@ -3973,7 +3982,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 }
 
 .cart-box .cart-overview p {
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fonte-principal);
 	font-size: 13px;
 	line-height: 20px;
 	font-weight: 700;
@@ -3993,7 +4002,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 
 .cart-total .total-desc,
 .cart-total .total-price {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 1;
@@ -4458,7 +4467,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 }
 
 .top-bar .top--contact {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	line-height: 50px;
 	color: #cecece;
 	font-size: 12px;
@@ -4471,7 +4480,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 
 .top-bar .top--social {
 	color: #cecece;
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 50px;
@@ -4505,7 +4514,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 .slider .slide--subheadline,
 .slider .slide--bio {
 	color: #f9f9f9;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fonte-principal);
 	font-weight: 700;
 	line-height: 26px;
 	margin-bottom: 0;
@@ -4514,7 +4523,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 
 .slider .slide--headline {
 	color: #ffffff;
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	font-weight: 600;
 	line-height: 65px;
 	margin-bottom: 20px;
@@ -4657,7 +4666,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 	font-size: 14px;
 	font-weight: 900;
 	text-transform: capitalize;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fonte-principal);
 	letter-spacing: 1px;
 	height: auto;
 }
@@ -4853,7 +4862,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 }
 
 .member .member-info h6 {
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fonte-principal);
 	color: #9b9b9b;
 	font-size: 13px;
 	font-weight: 400;
@@ -4914,7 +4923,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 }
 
 .testimonial-panel .testimonial--body p {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	font-size: 22px;
 	font-weight: 400;
 	line-height: 36px;
@@ -4969,7 +4978,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 }
 
 .gallery-filter li a {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	color: #333333;
 	font-size: 14px;
 	font-weight: 700;
@@ -5387,7 +5396,7 @@ a.gallery-more i {
 }
 
 .counter .count-box .counting {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	color: #1b1a1a;
 	font-size: 60px;
 	font-weight: 400;
@@ -5398,7 +5407,7 @@ a.gallery-more i {
 
 .counter .count-box .count-title {
 	color: #282828;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fonte-principal);
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 1;
@@ -5473,7 +5482,7 @@ a.gallery-more i {
 }
 
 .pricing-panel .pricing--heading p {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	color: #333333;
 	font-size: 90px;
 	font-weight: 400;
@@ -5686,7 +5695,7 @@ a.gallery-more i {
 
 .entry--meta {
 	color: #616161;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fonte-principal);
 	font-size: 13px;
 	font-weight: 400;
 	text-transform: capitalize;
@@ -5762,7 +5771,7 @@ a.gallery-more i {
 }
 
 .blog-entry .entry--more a {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	color: #282828;
 	font-size: 14px;
 	font-weight: 700;
@@ -5824,7 +5833,7 @@ a.gallery-more i {
 }
 
 .entry--share .share--title {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	color: #222222;
 	font-size: 14px;
 	font-weight: 700;
@@ -5928,7 +5937,7 @@ a.gallery-more i {
 }
 
 .entry-prev-next a {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	font-size: 16px;
 	font-weight: 700;
 	color: #282828;
@@ -6053,7 +6062,7 @@ ul.comments-list .comment-body .comment h6 {
 
 ul.comments-list .comment-body .comment .date {
 	color: #616161;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fonte-principal);
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 24px;
@@ -6401,7 +6410,7 @@ td.cart-product-quantity {
 
 .cart-product-name h6 {
 	color: #282828;
-	font-family: 'Raleway', sans-serif;
+	font-family: var(--fonte-principal);
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 27px;
@@ -6436,7 +6445,7 @@ td.cart-product-quantity {
 .cart-shiping h6,
 .cart-total-amount h6 {
 	color: #282828;
-	font-family: 'Raleway', sans-serif;
+	font-family: var(--fonte-principal);
 	font-size: 18px;
 	font-weight: 700;
 	margin-bottom: 25px;
@@ -6444,7 +6453,7 @@ td.cart-product-quantity {
 }
 
 .cart-total-amount ul li {
-	font-family: 'Raleway', sans-serif;
+	font-family: var(--fonte-principal);
 	color: #39c6bb;
 	font-size: 13px;
 	font-weight: 700;
@@ -6613,7 +6622,7 @@ td.cart-product-quantity {
 }
 
 .product--content .product--cat {
-	font-family: 'Open Sans', sans-serif;
+	font-family: var(--fonte-principal);: 'Open Sans', sans-serif;
 	font-size: 13px;
 	font-style: italic;
 	line-height: 1;
@@ -6838,7 +6847,7 @@ td.cart-product-quantity {
 }
 
 .single-product .product-quantity .qua {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	color: #282828;
 	font-size: 15px;
 	font-weight: 700;
@@ -6950,7 +6959,7 @@ td.cart-product-quantity {
 	color: #282828;
 	font-size: 14px;
 	font-weight: 700;
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	text-transform: capitalize;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
@@ -7036,7 +7045,7 @@ td.cart-product-quantity {
 
 .single-product .product-related-title h5 {
 	color: #222222;
-	font-family: 'Raleway', sans-serif;
+	font-family: var(--fonte-principal);
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 1;
@@ -7145,7 +7154,7 @@ td.cart-product-quantity {
 
 .shop-filter li a {
 	color: #333333;
-	font-family: 'Raleway', sans-serif;
+	font-family: var(--fonte-principal);
 	font-size: 13px;
 	font-weight: 700;
 	line-height: 1;
@@ -7204,7 +7213,7 @@ td.cart-product-quantity {
 
 .shop-item .shop--price {
 	color: #9b9b9b;
-	font-family: 'Raleway', sans-serif;
+	font-family: var(--fonte-principal);
 	font-size: 22px;
 	font-weight: 700;
 	line-height: 1;
@@ -7213,7 +7222,7 @@ td.cart-product-quantity {
 
 .shop-item .shop--title h4 {
 	color: #ffffff;
-	font-family: 'Raleway', sans-serif;
+	font-family: var(--fonte-principal);
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 1;
@@ -7496,7 +7505,7 @@ a.link--styled:hover {
 }
 
 .widget-recent-posts .entry .entry--title a {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	color: #282828;
 	font-size: 15px;
 	font-weight: 600;
@@ -7509,7 +7518,7 @@ a.link--styled:hover {
 }
 
 .widget-recent-posts .entry .entry--desc .entry-meta a {
-	font-family: 'Raleway', sans-serif;
+	font-family: var(--fonte-principal);
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 20px;
@@ -7593,7 +7602,7 @@ a.link--styled:hover {
 }
 
 .widget-recent-products .product .product-title a {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	color: #282828;
 	font-size: 14px;
 	font-weight: 700;
@@ -7754,7 +7763,7 @@ a.link--styled:hover {
 
 .widget-info .info--title {
 	color: #ffffff;
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	font-size: 15px;
 	font-weight: 700;
 	line-height: 21px;
@@ -7826,7 +7835,8 @@ footer .widget-instagram .insta-hover i {
 /* Widget Twitter  */
 .widget-tweets ul li:before {
 	content: "\f099";
-	font-family: fontawesome;
+	font-family: var(--fonte-principal);
+
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
@@ -7875,7 +7885,7 @@ footer .widget-instagram .insta-hover i {
 	background: #39c6bb;
 	border-radius: 2px;
 	padding: 20px;
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	font-size: 15px;
 	font-weight: 700;
 	color: #222;
@@ -7981,7 +7991,7 @@ footer .widget-instagram .insta-hover i {
 
 .footer-widget .widget-title h5 {
 	color: #ffffff;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fonte-principal);
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 1;
@@ -8085,7 +8095,7 @@ footer .widget-instagram .insta-hover i {
 }
 
 .footer--widget-recent .entry--title a {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	color: #cecece;
 	font-size: 14px;
 	font-weight: 600;
@@ -8176,7 +8186,7 @@ footer .widget-links ul li a {
 	font-weight: 400;
 	line-height: 27px;
 	text-transform: capitalize;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fonte-principal);
 }
 
 footer .widget-links ul li a:hover {
@@ -8193,7 +8203,7 @@ footer .widget-links-inline ul li {
 	border-top: 2px solid rgba(71, 71, 71, 0.25);
 	padding: 30px 0;
 	font-size: 14px;
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 }
 
 .footer--copyright .payment--methods a {
@@ -8508,7 +8518,7 @@ footer .widget-newsletter form {
 
 .flip-clock-wrapper ul li a div,
 .flip-clock-wrapper ul li a div div.inn {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	font-size: 38px;
 	font-weight: 300;
 	font-style: italic;
@@ -8541,7 +8551,7 @@ footer .widget-newsletter form {
 }
 
 .countdown-amount {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	color: #39c6bb;
 	font-size: 80px;
 	font-weight: 600;
@@ -9181,7 +9191,7 @@ footer .widget-newsletter form {
 }
 
 .case-filter li a {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	color: #333333;
 	font-size: 14px;
 	font-weight: 700;
@@ -9311,7 +9321,7 @@ footer .widget-newsletter form {
 	line-height: 1;
 	position: relative;
 	padding-left: 7px;
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 }
 
 .case-item .case--cat a:before {
@@ -9535,7 +9545,7 @@ footer .widget-newsletter form {
 }
 
 .carousel-navs .owl-nav .owl-prev:before {
-	font-family: 'Linearicons-Free';
+	font-family: var(--fonte-principal);
 	content: "\e879";
 	font-size: 20px;
 }
@@ -9545,7 +9555,7 @@ footer .widget-newsletter form {
 }
 
 .carousel-navs .owl-nav .owl-next:before {
-	font-family: 'Linearicons-Free';
+	font-family: var(--fonte-principal);
 	content: "\e87a";
 	font-size: 20px;
 }
@@ -9623,7 +9633,8 @@ footer .widget-newsletter form {
 
 .slider-navs .owl-nav .owl-next:before,
 .slider-navs .owl-nav .owl-prev:before {
-	font-family: fontawesome;
+	font-family: var(--fonte-principal);
+
 	font-size: 25px;
 }
 
@@ -9762,7 +9773,7 @@ footer .widget-newsletter form {
 	position: absolute;
 	left: 0;
 	top: 10px;
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	color: #e8e8e8;
 	font-size: 52px;
 	line-height: 29px;
@@ -9774,7 +9785,7 @@ footer .widget-newsletter form {
 
 .info-card .info-card-subtitle {
 	color: #9b9b9b;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fonte-principal);
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 1;
@@ -9852,7 +9863,7 @@ footer .widget-newsletter form {
 
 .number-panel .number--content h6 {
 	color: #39c6bb;
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	font-size: 13px;
 	font-style: italic;
 	line-height: 1;
@@ -10203,7 +10214,7 @@ footer .widget-newsletter form {
 .header-fixed-side .navbar-nav a {
 	font-size: 13px;
 	font-weight: 700;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fonte-principal);
 	line-height: 39px;
 	text-transform: uppercase;
 	color: #333333;
@@ -10548,7 +10559,7 @@ footer .widget-newsletter form {
 }
 
 .landing-demos .portfolio-title h4 {
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fonte-principal);
 	text-align: center;
 	font-size: 15px;
 	font-weight: 700;
@@ -10720,7 +10731,7 @@ footer .widget-newsletter form {
 .landing-banners .panel--logo h5 {
 	font-size: 14px;
 	font-weight: 700;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fonte-principal);
 	line-height: 20px;
 	margin-bottom: 0;
 }
@@ -11246,7 +11257,7 @@ footer .widget-newsletter form {
 }
 
 .consultation--desc {
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	font-size: 32px;
 	font-weight: 600;
 	font-style: italic;
@@ -11506,7 +11517,7 @@ footer .widget-newsletter form {
     #Countdown
 \*------------------------------------*/
 .counter-clock-container h5 {
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fonte-principal);
 	color: #ffffff;
 	font-size: 14px;
 	font-weight: 900;
@@ -11573,7 +11584,7 @@ footer .widget-newsletter form {
 .counter-clock-panel .skills .progress-title .value,
 .counter-clock-panel .skills .progress-title .desc {
 	color: #ffffff;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fonte-principal);
 	text-transform: capitalize;
 	font-weight: 400;
 	font-size: 12px;
@@ -11635,7 +11646,8 @@ footer .widget-newsletter form {
 	top: 0;
 	left: 50%;
 	color: #282828;
-	font-family: fontawesome;
+	font-family: var(--fonte-principal);
+
 	font-size: 17px;
 	line-height: 40px;
 	background-color: #f9f9f9;
@@ -11687,7 +11699,7 @@ footer .widget-newsletter form {
 	display: block;
 	background-color: #39c6bb;
 	color: #ffffff;
-	font-family: 'Montserrat';
+	font-family: var(--fonte-principal);
 	font-size: 25px;
 	font-style: italic;
 	margin-bottom: 4px;
@@ -11980,4 +11992,128 @@ footer .widget-newsletter form {
     background-color: #f5f5f5;
     color: #000;
 }
+
+.divided {
+	display: flex;
+	flex-direction: row;
+	width: min-content;
+}
+
+.divided span {
+	display: flex;
+	align-items: center;
+	font-size: 2rem;
+	color: #1b1a1a;
+}
+
+.another {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.autoplay-progress {
+	position: absolute;
+	right: 16px;
+	bottom: 16px;
+	z-index: 10;
+	width: 48px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+	--progress: 0;
+	position: absolute;
+	left: 0;
+	top: 0px;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	stroke-width: 4px;
+	stroke: var(--swiper-theme-color);
+	fill: none;
+	stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+	stroke-dasharray: 125.6;
+	transform: rotate(-90deg);
+}
+
+.member {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	padding: 5rem;
+}
+
+.member-img img{
+	max-height: 500px !important;
+}
+
+.member-info {
+	width: 35vw;
+}
+
+.member-info ul li {
+	text-align: justify;
+}
+
+.redeSociais {
+	display: flex;
+	justify-content: start;
+	margin-left: 1.5rem;
+	align-items: end;
+	height: 48%;
+}
+
+@media (max-width: 991px) {
+	.member {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.member-img img {
+		height: 550px !important;
+		width: auto !important;
+	}
+	.swiper{
+		height: 1250px;
+	}
+	.redeSociais {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.redeSociais a i {
+		font-size: 4rem !important;
+	}
+}
+
 

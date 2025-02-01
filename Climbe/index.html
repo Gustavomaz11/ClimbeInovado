@@ -14,9 +14,7 @@
 
     <!-- Fonts
     ============================================= -->
-    <link
-        href="http://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800%7CRoboto:300i,400,400i,500,500i,700"
-        rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800%7CRoboto:300i,400,400i,500,500i,700" rel="stylesheet" type="text/css">
 
     <!-- Stylesheets
     ============================================= -->
@@ -30,6 +28,12 @@
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Swipper Para Slides -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <title>Climbe Investimentos Independentes</title>
 </head>
@@ -46,47 +50,43 @@
                     <a class="navbar-brand" href="index.html">
                         <img class="logo logo-light" src="assets/images/logoClimbe.png" alt="Logo Climbe Investimentos" height="60rem">
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarContent">
                         <ul class="navbar-nav ml-auto">
-                            <li class="has-dropdown active">
-                                <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-item">Sobre a Climbe</a>
+                            <!-- <li class="has-dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-item" data-hover="pages">Sobre a Climbe</a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="page-about.html">Quem Somos</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Atendimentos</a>
+                                        <a href="#">Quem somos ?</a>
                                     </li>
                                     <li>
                                         <a href="#">Nosso Escritório</a>
                                     </li>
+
+                                </ul>
+                            </li> -->
+                            <li class="has-dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-item" data-hover="pages">Serviços</a>
+                                <ul class="dropdown-menu" style="width: 18vw !important;">
+                                    <li>
+                                        <a href="#">Avaliações de Empresas (Valuation)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Diretoria Financeira sob Demanda (CFO)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Fusões e Aquisições (M&A)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terceirização de Rotinas Financeiras (BPO)</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="has-dropdown">
-                                <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-item"
-                                    data-hover="pages">Serviços</a>
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-item">Relação com Investidores</a>
                                 <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="#">Valuation</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">CFO</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">M&A</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="has-dropdown">
-                                <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-item">Conteúdos</a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="https://play.google.com/store/apps/details?id=com.climbe.app">Aplicativo</a>
-                                    </li>
                                     <li>
                                         <a href="https://drive.google.com/file/d/1ay35ML0cpPvf_3pxvPmQeLJ1kfHosm9S/view" target="_blank">Acordo de Sócios</a>
                                     </li>
@@ -141,25 +141,34 @@
                                             <li><a href="https://drive.google.com/file/d/16BHvasfpRk2HPIM1yUMYPtybbwXzG7bv/view">2023</a></li>
                                         </ul>
                                     </li>
-                                    <li>
-                                        <a href="blog-single.html">Compliance</a>
+                                    
+                                    <li class="has-dropdown">
+                                        <a href="#">Compliance</a>
+                                        <ul class="dropdown-menu submenu">
+                                            <li style="width: 22vw !important ;"><a href="https://drive.google.com/file/d/1juoz7DKTvJdcOeEMg-jZPaZazfIJv_pC/view">Manual de Compliance</a></li>
+                                            
+                                        </ul>
                                     </li>
+                                    
                                     <li>
                                         <a href="https://drive.google.com/file/d/1Y_bNy68XhiQn_2WaNIzm24LV7fSnSkw6/view">Educação Continua</a>
                                     </li>
                                     <li>
-                                        <a href="https://drive.google.com/file/d/1VrnQb6lglP8vcKMmFb3jvvaUuNeKxUbq/view">Satisfação</a>
+                                        <a href="https://drive.google.com/file/d/1VrnQb6lglP8vcKMmFb3jvvaUuNeKxUbq/view">NPS</a>
                                     </li>
                                 </ul>
                             </li>
-                            
-                            <li class="has-dropdown">
+
+                            <!-- <li class="has-dropdown">
                                 <a href="page-faqs.html" data-toggle="dropdown" class="dropdown-toggle menu-item" id="faqQuestions">Perguntas Frequentes</a>
-                                
-                            </li>
+
+                            </li> -->
+                            <div class="module module-consultation pull-left">
+                                <a class="btn" href="#pricing1">Aplicativo</a>
+                            </div>
 
                         </ul>
-                        
+
                     </div>
                 </div>
             </nav>
@@ -168,56 +177,31 @@
             <div class="rev_slider_wrapper">
                 <div id="slider1" class="rev_slider" data-version="5.0">
                     <ul>
-                        <li data-transition="zoomout" data-slotamount="default" data-easein="Power4.easeInOut"
-                            data-easeout="Power4.easeInOut" data-masterspeed="2000">
-                            
-                            <img src="assets/images/banners/3.png" alt="Slide Background Image" width="1920"
-                                height="1280">
-                            
-                            <div class="tp-caption" data-x="['left','left','left','left']"
-                                data-hoffset="['70','50','50','20']" data-y="['middle','middle','middle','middle']"
-                                data-voffset="['-110','-100','-110','-110']" data-fontsize="['16','16','16','12']"
-                                data-lineheight="['25','25','25','25']" data-whitespace="nowrap" data-width="none"
-                                data-height="none"
-                                data-frames='[{"delay":750,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                        <li data-transition="zoomout" data-slotamount="default" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000">
+
+                            <img src="assets/images/banners/3.png" alt="Slide Background Image" width="1920" height="1280">
+
+                            <div class="tp-caption" data-x="['left','left','left','left']" data-hoffset="['70','50','50','20']" data-y="['middle','middle','middle','middle']" data-voffset="['-110','-100','-110','-110']" data-fontsize="['16','16','16','12']" data-lineheight="['25','25','25','25']" data-whitespace="nowrap" data-width="none" data-height="none" data-frames='[{"delay":750,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-splitin="none" data-splitout="none" data-responsive_offset="on">
                                 <div class="slide--subheadline">Climbe Investimentos Independentes</div>
                             </div>
 
-                           
-                            <div class="tp-caption" data-x="['left','left','left','left']"
-                                data-hoffset="['70','50','50','20']" data-y="['middle','middle','middle','middle']"
-                                data-voffset="['-5','-5','-5','10']" data-fontsize="['60', '50', '40', '30']"
-                                data-lineheight="['60','60','60','60']" data-width="none" data-height="none"
-                                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                data-splitin="none" data-splitout="none" data-responsive_offset="on">
+
+                            <div class="tp-caption" data-x="['left','left','left','left']" data-hoffset="['70','50','50','20']" data-y="['middle','middle','middle','middle']" data-voffset="['-5','-5','-5','10']" data-fontsize="['60', '50', '40', '30']" data-lineheight="['60','60','60','60']" data-width="none" data-height="none" data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-splitin="none" data-splitout="none" data-responsive_offset="on">
                                 <div class="slide--headline">O Melhor Investimento Precisa</div>
                                 <div class="slide--headline">Da Melhor Orientação</div>
                             </div>
 
-                            
-                            <div class="tp-caption" data-x="['left','left','left','left']"
-                                data-hoffset="['70','50','50','20']" data-y="['middle','middle','middle','middle']"
-                                data-voffset="['100','100','100','100']" data-fontsize="['16', '16', '16', '12']"
-                                data-lineheight="['25','25','25','25']" data-width="none" data-height="none"
-                                data-frames='[{"delay":1250,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                                <div class="slide--bio"><i class="bi bi-bar-chart-line-fill"></i> Agora você pode contar com a nossa consultoria e informações
-                                    especiais do mercado</div>
+
+                            <div class="tp-caption" data-x="['left','left','left','left']" data-hoffset="['70','50','50','20']" data-y="['middle','middle','middle','middle']" data-voffset="['100','100','100','100']" data-fontsize="['16', '16', '16', '12']" data-lineheight="['25','25','25','25']" data-width="none" data-height="none" data-frames='[{"delay":1250,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                                <div style="color: #fff;"><i class="bi bi-bar-chart-line-fill"></i> Agora você pode contar com a nossa consultoria e informações
+                                    qualificadas do mercado</div>
                             </div>
 
-                            
-                            <div class="tp-caption" data-x="['left','left','left','left']"
-                                data-hoffset="['70','50','50','20']" data-y="['middle','middle','middle','middle']"
-                                data-voffset="['176','176','200','210']" data-width="none" data-height="none"
-                                data-whitespace="nowrap"
-                                data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                                data-splitin="none" data-splitout="none" data-responsive_offset="on">
+
+                            <div class="tp-caption" data-x="['left','left','left','left']" data-hoffset="['70','50','50','20']" data-y="['middle','middle','middle','middle']" data-voffset="['176','176','200','210']" data-width="none" data-height="none" data-whitespace="nowrap" data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' data-splitin="none" data-splitout="none" data-responsive_offset="on">
                                 <div class="slide-action">
                                     <a class="btn btn--gradient btn--rounded mr-30" href="#">Saiba Mais</a>
-                                    <a class="btn btn--video popup-video"
-                                        href="https://www.youtube.com/watch?v=dWRCooFKk3c&list=RDdWRCooFKk3c&start_radio=1"><i
-                                            class="fa fa-play"></i>Assista</a>
+                                    <a class="btn btn--video popup-video" href="https://www.youtube.com/watch?v=dWRCooFKk3c&list=RDdWRCooFKk3c&start_radio=1"><i class="fa fa-play"></i>Assista</a>
                                 </div>
                             </div>
                         </li>
@@ -236,49 +220,51 @@
                                         <i class="icon-puzzle"></i>
                                     </div>
                                     <div class="feature-card-content">
-                                        <h3 class="feature-card-title">Serviço Automatizado e Mobilidade</h3>
-                                        <p class="feature-card-desc">A Climbe está investindo em tecnologias, como aplicativos para smartphones, que permitem aos clientes acessar conteúdos programáticos e serviços automatizados, facilitando a gestão dos investimentos em qualquer lugar.</p>
+                                        <h3 class="feature-card-title">Fusões e Aquisições (M&A)</h3>
+                                        <p class="feature-card-desc" style="text-align: justify;">Auxiliamos empresas em processos estratégicos de compra, venda, fusões ou reestruturações. Nosso trabalho abrange todas as fases dessas operações, desde a análise inicial e due diligence até a negociação e integração pós-transação.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="200ms">
                                 <div class="feature-card">
                                     <div class="feature-card-icon">
-                                        <i class="icon-flag"></i>
+                                        <i class="icon-presentation"></i>
+
                                     </div>
                                     <div class="feature-card-content">
-                                        <h3 class="feature-card-title">Ecossistema de Investidores e Consultores</h3>
-                                        <p class="feature-card-desc">Criamos uma rede de analistas, consultores e investidores de todo o Brasil, permitindo discussões diárias e compartilhamento de conhecimentos sobre o mercado financeiro, fortalecendo a comunidade de clientes​.</p>
+                                        <h3 class="feature-card-title">Diretoria Financeira sob Demanda (CFO)</h3>
+                                        <p class="feature-card-desc" style="text-align: justify;">Oferecemos a expertise de um diretor financeiro experiente, sem a necessidade de contratar um executivo em tempo integral. Esse serviço é ideal para empresas em crescimento que buscam uma gestão financeira estratégica e eficiente, mas que não têm os recursos ou a necessidade de um CFO permanente.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="100ms">
                                 <div class="feature-card">
                                     <div class="feature-card-icon">
-                                        <i class="icon-layers"></i>
+                                        <i class="icon-search"></i>
+
                                     </div>
                                     <div class="feature-card-content">
-                                        <h3 class="feature-card-title">Transparência e Ética no Mercado Financeiro</h3>
-                                        <p class="feature-card-desc">Nossos serviços são guiados por princípios éticos, buscando sempre o alinhamento com os objetivos dos clientes, sem conflito de interesses. Nosso compromisso é oferecer segurança e confiança para quem está começando ou já investe no mercado financeiro.</p>
+                                        <h3 class="feature-card-title">Avaliações de Empresas (Valuation)</h3>
+                                        <p class="feature-card-desc" style="text-align: justify;">Nosso objetivo é fornecer uma análise precisa e detalhada, com base em métodos reconhecidos como fluxo de caixa descontado (DCF), múltiplos de mercado e avaliação de ativos, entre outros. Com isso, ajudamos nossos clientes a tomar decisões mais informadas em processos de venda, compra, fusões, reestruturações ou busca por investidores.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="200ms">
                                 <div class="feature-card">
                                     <div class="feature-card-icon">
-                                        <i class="icon-clipboard"></i>
+                                        <i class="bi bi-arrow-down-up"></i>
                                     </div>
                                     <div class="feature-card-content">
-                                        <h3 class="feature-card-title">Apoio Didático e Interação Direta</h3>
-                                        <p class="feature-card-desc">Os alunos têm acesso a suporte didático contínuo, com a possibilidade de tirar dúvidas diretamente com os professores durante as aulas online, o que torna o aprendizado mais interativo e eficiente.</p>
+                                        <h3 class="feature-card-title">Terceirização de Rotinas Financeiras (BPO)</h3>
+                                        <p class="feature-card-desc" style="text-align: justify;">Nosso objetivo é oferecer soluções completas para a gestão das rotinas financeiras da sua empresa, como contas a pagar, a receber, conciliação bancária e fluxo de caixa. Com a terceirização desses processos, buscamos otimizar o tempo e os recursos do cliente, garantindo maior eficiência, controle e segurança na gestão financeira.</p>
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
-                       
+
                     </div>
-                    
+
                     <div class="col-sm-12 col-md-12 col-lg-4">
                         <div class="contact-box">
                             <div class="contat-heading">
@@ -287,27 +273,23 @@
                             <form class="mb-0">
                                 <div class="row">
                                     <div class="col">
-                                        <input type="text" class="form-control" name="contact-name" id="contact-name"
-                                            placeholder="Nome" required="">
+                                        <input type="text" class="form-control" name="contact-name" id="contact-name" placeholder="Nome" required="">
                                     </div>
                                 </div>
                                 <div class="row">
 
                                     <div class="col">
-                                        <input type="email" class="form-control" name="contact-email" id="contact-email"
-                                            placeholder="Email">
+                                        <input type="email" class="form-control" name="contact-email" id="contact-email" placeholder="Email">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <textarea class="form-control" name="contact-message" id="contact-message"
-                                            rows="2" placeholder="Mensagem"></textarea>
+                                        <textarea class="form-control" name="contact-message" id="contact-message" rows="2" placeholder="Mensagem"></textarea>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <input type="submit" value="Enviar" name="submit"
-                                            class="btn btn--secondary btn--block">
+                                        <input type="submit" value="Enviar" name="submit" class="btn btn--secondary btn--block">
                                     </div>
                                 </div>
                                 <div class="row">
@@ -316,61 +298,77 @@
                                     </div>
                                 </div>
                             </form>
-                            
+
                         </div>
                     </div>
-                    
+
                 </div>
-                
+
             </div>
-            
-            
+
+
         </section>
         <section id="about1" class="about about-1 bg-gray pt-110 pb-50">
             <div class="container">
-                
+
                 <div class="counter counter-1">
                     <div class="row">
                         <div class="col-6 col-sm-6 col-md-6 col-lg-3">
                             <div class="count-box text-center">
-                                <div class="counting">1,538</div>
-                                <div class="count-title">Feedback de Clientes</div>
+                                <div class="another">
+                                    <div class="divided">
+                                        <div class="counting">90</div>
+                                    </div>
+                                    <div class="count-title">NPS</div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-6 col-sm-6 col-md-6 col-lg-3">
                             <div class="count-box text-center">
-                                <div class="counting">2.215,336</div>
-                                <div class="count-title">Faturamento Anual</div>
+                                <div class="another">
+                                    <div class="divided">
+                                        <span>+</span>
+
+                                        <div class="counting">200</div>
+                                    </div>
+                                    <div class="count-title">Clientes PJ</div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-6 col-sm-6 col-md-6 col-lg-3">
                             <div class="count-box text-center">
-                                <div class="counting">3.128</div>
-                                <div class="count-title">Assinaturar no APP</div>
+                                <div class="counting">627</div>
+                                <div class="count-title">Classificação Média App</div>
                             </div>
                         </div>
                         <div class="col-6 col-sm-6 col-md-6 col-lg-3">
                             <div class="count-box text-center">
-                                <div class="counting">15,021,365</div>
-                                <div class="count-title">Valuation</div>
+                                <div class="another">
+                                    <div class="divided">
+                                        <span>+R$</span>
+                                        <div class="counting">150</div>
+                                        <span>M</span>
+
+                                    </div>
+                                    <div class="count-title">Em empresas avaliadas</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <section id="featured1" class="featured featured-1 text-center pt-110">
             <div class="container">
                 <div class="row ">
                     <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
                         <div class="heading  mb-50 text--center">
-                            <p class="heading--subtitle">Climbe Investimentos Independentes</p>
-                            <h2 class="heading--title">Nossos Serviços</h2>
+                            <h2 class="heading--title">Climbe Investimentos Independentes</h2>
                             <p class="heading--desc mb-0">Seja você um iniciante ou um investidor experiente, nossas ferramentas, relatórios e recomendações são criadas pensando no seu crescimento e na sua independência financeira.</p>
                         </div>
                     </div>
-                    
+
                 </div>
                 <!-- .row end -->
                 <div class="row">
@@ -381,51 +379,52 @@
                                 <i class="icon-presentation"></i>
                             </div>
                             <div class="feature-card-content">
-                                <h3 class="feature-card-title">Chief Financial Officer as a Service (CFO)</h3>
-                                <p class="feature-card-desc">Oferecemos a expertise de um diretor financeiro experiente, sem a necessidade de contratar um executivo em tempo integral. Esse serviço é ideal para empresas em crescimento que buscam uma gestão financeira estratégica e eficiente, mas que não têm os recursos ou a necessidade de um CFO permanente. Com esse modelo, podemos ajudar as empresas a acessar conhecimentos especializados para otimizar fluxos de caixa, gestão de riscos, planejamentos financeiros e estratégias de crescimento.</p>
+                                <h3 class="feature-card-title">Serviço Automatizado e Mobilidade</h3>
+                                <p class="feature-card-desc">A Climbe está investindo em tecnologias, como aplicativos para smartphones, que permitem aos clientes acessar conteúdos, facilitando a gestão dos investimentos em qualquer lugar.</p>
                             </div>
                         </div>
                     </div>
-                    
+
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="feature-card">
+                            <div class="feature-card-icon">
+                                <i class="icon-puzzle"></i>
+                            </div>
+                            <div class="feature-card-content">
+                                <h3 class="feature-card-title">Ecossistema de Investidores e Consultores</h3>
+                                <p class="feature-card-desc">Criamos uma rede de analistas, consultores e investidores de todo o Brasil, permitindo discussões diárias e compartilhamento de conhecimentos sobre o mercado financeiro, fortalecendo a comunidade de clientes.</p>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col-sm-12 col-md-6 col-lg-4">
                         <div class="feature-card">
                             <div class="feature-card-icon">
                                 <i class="icon-search"></i>
                             </div>
                             <div class="feature-card-content">
-                                <h3 class="feature-card-title">Operações de Fusões e Aquisições (M&A)
-                                </h3>
-                                <p class="feature-card-desc">Auxiliamos empresas em processos estratégicos de compra, venda, fusões ou reestruturações. Nosso trabalho abrange todas as fases dessas operações, desde a análise inicial e due diligence até a negociação e integração pós-transação.</p>
+                                <h3 class="feature-card-title">Transparência e Ética no Mercado Financeiro</h3>
+                                <p class="feature-card-desc">Nossos serviços são guiados por princípios éticos, buscando sempre o alinhamento com os objetivos dos clientes, sem conflito de interesses. Nosso compromisso é oferecer segurança e confiança para quem está começando ou já investe no mercado financeiro.</p>
                             </div>
                         </div>
                     </div>
+
                     
-                    <div class="col-sm-12 col-md-6 col-lg-4">
-                        <div class="feature-card">
-                            <div class="feature-card-icon">
-                                <i class="icon-piechart"></i>
-                            </div>
-                            <div class="feature-card-content">
-                                <h3 class="feature-card-title">Valuation</h3>
-                                <p class="feature-card-desc">Nosso objetivo é fornecer uma análise precisa e detalhada, com base em métodos reconhecidos como fluxo de caixa descontado (DCF), múltiplos de mercado e avaliação de ativos, entre outros. Com isso, ajudamos nossos clientes a tomar decisões mais informadas em processos de venda, compra, fusões, reestruturações ou busca por investidores.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
+
                 </div>
-                
+
                 <div class="row ">
                     <div class="col-sm-12 col-md-12 col-lg-12 text--center">
                         <a href="#" class="btn btn--gradient btn--rounded">Fale Conosco</a>
                     </div>
-                    
+
                 </div>
-                
+
 
             </div>
-            
+
         </section>
-        
+
         <section id="pricing1" class="pricing pricing-1 bg-overlay bg-overlay-dark2 pt-110 pb-0">
             <div class="bg-section">
                 <img src="assets/images/background/2.jpg" alt="background">
@@ -439,16 +438,16 @@
                             <p class="heading--desc heading--light mb-0">O app Climbe é a ferramenta ideal para auxiliar seus investimentos. O app Climbe traz análises e conteúdos independentes sobre o mercado financeiro. Conteúdos educacionais, relatórios de análise das empresas e recomendações para a sua tomada de decisão. Essencial para iniciantes e completo para os profissionais mais experientes.</p>
                         </div>
                     </div>
-                    
+
                 </div>
-               
+
             </div>
             <div class="container pt-40">
                 <div class="row">
-                    
+
                     <div class="col-sm-12 col-md-4 col-lg-4 price-table">
                         <div class="pricing-panel">
-                            
+
                             <div class="pricing--heading text--center">
                                 <div class="pricing--icon">
                                     <i class="icon-global"></i>
@@ -463,13 +462,13 @@
                                 </div>
                                 <a class="btn btn--secondary btn--bordered btn--rounded" href="https://play.google.com/store/apps/details?id=com.climbe.app&pli=1">Baixe o APP</a>
                             </div>
-                            
+
                         </div>
                     </div>
-                    
+
                     <div class="col-sm-12 col-md-4 col-lg-4 price-table pricing-active">
                         <div class="pricing-panel">
-                            
+
                             <div class="pricing--heading text--center">
                                 <div class="pricing--icon">
                                     <i class="icon-global"></i>
@@ -482,23 +481,18 @@
                                     <p>Investimentos Independentes</p>
                                     <p>Swing Trade</p>
                                     <p>Tabela de Investimentos</p>
-                                    <p>Planejador Financeiro</p>
-                                    <p>Analista Cripto</p>
-                                    <p>Analista Nacional</p>
-                                    <p>Analista Internacional</p>
-                                    <p>Advogados Investidores</p>
-                                    <p>Especialistas em Consórcios</p>
-                                    <p>Advogada Planej. Sucessório</p>
+
+                                    <p>E muito mais</p>
                                 </div>
                                 <a class="btn btn--white btn--bordered btn--rounded" href="https://play.google.com/store/apps/details?id=com.climbe.app&pli=1">Baixe o App</a>
                             </div>
-                            
+
                         </div>
                     </div>
-                    
+
                     <div class="col-sm-12 col-md-4 col-lg-4 price-table">
                         <div class="pricing-panel">
-                            
+
                             <div class="pricing--heading text--center">
                                 <div class="pricing--icon">
                                     <i class="icon-global"></i>
@@ -507,26 +501,366 @@
                                 <p style="font-size: 12px !important;">A partir de</p>
                                 <p style="font-size: 72px !important;"><span class="currency" style="margin-left: -3rem;">R$</span>399,00</p>
                                 <div class="pricing--desc">
-                                    <p>Os cursos da Climbe são projetados para capacitar você a dominar o mercado financeiro, independentemente do seu nível de experiência. Oferecemos programas que vão do básico ao avançado, com aulas online interativas e conteúdo atualizado, focando em temas como análise de investimentos, estratégias de mercado, planejamento financeiro e muito mais. Nosso objetivo é desmistificar o universo dos investimentos e ajudar você a construir uma base sólida para tomar decisões mais assertivas. Tudo isso com suporte direto de especialistas e materiais didáticos exclusivos.</p>
+                                    <p>Curso Básico  </p>
+                                    <p>Curso Intermediário  </p>
+                                    <p>Curso Avançado  </p>
+                                    <p>Curso de Legislação  </p>
                                 </div>
                                 <a class="btn btn--secondary btn--bordered btn--rounded" href="https://play.google.com/store/apps/details?id=com.climbe.app&pli=1">Iniciar Agora</a>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
             <div class="section-divider"></div>
         </section>
+        <section id="team1" class="team team-1 pb-50">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+                        <div class="heading mb-50 text--center">
+                            <h2 class="heading--title">Conheça Nosso Time</h2>
+                            <p class="heading--desc mb-0" style="text-align: justify;">Nosso time é formado por especialistas apaixonados pelo que fazem. Combinamos experiência, inovação e dedicação para oferecer soluções personalizadas que atendem às suas necessidades.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Slider main container -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1 -->
+                          <div class="swiper-slide">
+                            <div class="member">
+                                <div class="member-img">
+                                    <img src="assets/images/colaboradores/andersonSales.png" alt="Anderson Sales">
+                                </div>
+                                <div class="member-info">
+                                    <h3>Anderson Sales</h3>
+                                    <h5>Sócio Fundador</h5>
+                                    <ul>
+                                        <li>Gestor, Analista e Consultor credenciado a CVM</li>
+                                        <li>Certificado CGA, CGE e CNPI Pleno</li>
+                                        <li>Graduado em Matemática</li>
+                                        <li>Pós graduado em Gestão de Cooperativas de Crédito e Gestão Fiscal e Planejamento Tributário</li>
+                                    </ul>
+                                    <div class="redeSociais">
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                            <!-- Slide 2 -->
+
+                          <div class="swiper-slide">
+                            <div class="member">
+                                <div class="member-img">
+                                    <img src="assets/images/colaboradores/felipeTrindade.png" alt="Felipe Trindade">
+                                </div>
+                                <div class="member-info">
+                                    <h3>Felipe Trindade</h3>
+                                    <h5>Analista CNPI</h5>
+                                    <ul>
+                                        <li>Formado em Economia - Universidade Federal de Sergipe (UFS)</li>
+                                        <li>MBA em Finanças pela FGV - Fundação Getúlio Vargas</li>
+                                        <li> Atua há 8 anos no mercado financeiro</li>
+                                    </ul>
+                                    <div class="redeSociais">
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                            <!-- Slide 3  -->
+
+                          <div class="swiper-slide">
+                            <div class="member">
+                                <div class="member-img">
+                                    <img src="assets/images/colaboradores/josueLopes.png" alt="Josue Lopes">
+                                </div>
+                                <div class="member-info">
+                                    <h3>Josué Lopes</h3>
+                                    <h5>Analista CNPI</h5>
+                                    <ul>
+                                        <li>Formado em Engenharia de Materiais - Universidade Federal de Sergipe (UFS)</li>
+                                        <li>Inscrição ativa na APIMEC como Analista de Valores Mobiliários</li>
+                                        <li>Consultor de Investimentos na Settee Internacional LLC</li>
+                                    </ul>
+                                    <div class="redeSociais">
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="member">
+                                <div class="member-img">
+                                    <img src="assets/images/colaboradores/mariaAlicePrado.png" alt="Josue Lopes">
+                                </div>
+                                <div class="member-info">
+                                    <h3>Maria Alice</h3>
+                                    <h5>Compliance</h5>
+                                    <ul>
+                                        <li>Formada em Direito - Universidade Tiradentes (Unit)</li>
+                                        <li> Curso de Especialização em Compliance Financeiro pela Legal, Ethics and Compliance (LEC)</li>
+                                        <li>Diretora de Compliance e Risco na Viggo Asset Management</li>
+                                    </ul>
+                                    <div class="redeSociais">
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="member">
+                                <div class="member-img">
+                                    <img src="assets/images/colaboradores/tamiresCavalcante.png" alt="tamires cavalcante">
+                                </div>
+                                <div class="member-info">
+                                    <h3>Tamires Cavalcante</h3>
+                                    <h5>Contadora</h5>
+                                    <ul>
+                                        <li>Formada em Ciências Contábeis - Universidade Tiradentes (Unit)</li>
+                                        <li>Pós-Graduação em Finanças Corporativas, Auditoria e Controladoria - Universidade Tiradentes (Unit)</li>
+                                        <li>Gestora Contábil na Evoluti Contabilidade (2020 - Atual)</li>
+                                        <li>Analista Contábil na MCE Contabilidade Empresarial(2017 - 2019)</li>
+                                    </ul>
+                                    <div class="redeSociais">
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="member">
+                                <div class="member-img">
+                                    <img src="assets/images/colaboradores/allanLima.png" alt="allan lima">
+                                </div>
+                                <div class="member-info">
+                                    <h3>Allan Lima</h3>
+                                    <h5>Consultor Comercial</h5>
+                                    <ul>
+                                        <li>Engenheiro civil com experiência em orçamento e controle de projetos</li>
+                                        <li>Sócio atuante em operações comerciais, prospecção de novos negócios e em Desenvolvimento Imobiliário na Climbe Holding</li>
+                                        <li>Trader desde 2018, especialista em operações de swing trade e desenvolvimento de sistemas de negociação.</li>  
+                                    </ul>
+                                    <div class="redeSociais">
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="member">
+                                <div class="member-img">
+                                    <img src="assets/images/colaboradores/daviMarques.png" alt="davi marques">
+                                </div>
+                                <div class="member-info">
+                                    <h3>Davi Marques</h3>
+                                    <h5>Consultor Empresarial</h5>
+                                    <ul>
+                                        <li>Advogado especializado em direto médico e empresarial</li>
+                                        <li>sócio proprietário no escritório Longo & Marques Advogados Associados</li>
+                                        <li>Agente Autônomo de Investimentos (Habilitado pela Ancord)</li>  
+                                        <li>Sócio proprietário na Empoderar Consultoria & Gestão</li>
+                                        <li>Sócio na Climbe Holding</li>
+                                    </ul>
+                                    <div class="redeSociais">
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="member">
+                                <div class="member-img">
+                                    <!-- esse precisa de outra foto -->
+                                    <img src="assets/images/colaboradores/arivaldoBarreto.jpg" alt="arivaldo barreto">
+                                </div>
+                                <div class="member-info">
+                                    <h3>Arivaldo Barreto</h3>
+                                    <h5>Advogado Especialista em Recuperação Judicial</h5>
+                                    <ul>
+                                        <li>Advogado desde 2000, com experiência profissional em admnistração judicial com bases na mediação e negociação</li>
+                                        <li>Atua, de maneira holística e multidisciplinar, em processos de recuperação judicial e falência de médio e grande porte desde 2010</li>
+                                    </ul>
+                                    <div class="redeSociais">
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="member">
+                                <div class="member-img">
+                                    <img src="assets/images/colaboradores/marcioSouza.png" alt="marcio souza">
+                                </div>
+                                <div class="member-info">
+                                    <h3>Marcio Souza</h3>
+                                    <h5>Consultor Empresarial</h5>
+                                    <ul>
+                                        <li>Formado em Segurança Pública - Universidade UNOPAR</li>
+                                        <li>MBA em Finanças Corporativas - Galícia Educação</li>
+                                        <li>Consultor Financeiro Empresarial na Impactus Consultorias (2020 - Atual)</li>
+                                        <li>Administrador na Impactus Consultorias (2021-2024)</li>
+                                    </ul>
+                                    <div class="redeSociais">
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="member">
+                                <div class="member-img">
+                                    <img src="assets/images/colaboradores/gabrielDeCarvalho.png" alt="gabriel carvalho">
+                                </div>
+                                <div class="member-info">
+                                    <h3>Gabriel de Carvalho</h3>
+                                    <h5>Analista de Dados</h5>
+                                    <ul>
+                                        <li>Formado em Administração - Universidade Federal de Sergipe (UFS)</li>
+                                        <li>Formado Analista de Logística em Comércio Exterior - Associação Brasileira de Consultoria e Assessoria em Comércio Exterior (Abracomex)</li>
+                                        <li>Analista de Logística na Hidrovias do Brasil (2022 - 2023)</li>
+                                        <li>Supervisor de Logística na Hidrovias do Brasil (2023 - 2024);</li>
+                                        <li>Analista de Riscos na Climbe Investimentos: Educação, Consultoria e Análise LTDA (2024 - Atual)</li>
+                                        <li>Analista de Supply Chain na Alcoa (2024 - Atual)</li>
+                                    </ul>
+                                    <div class="redeSociais">
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="member">
+                                <div class="member-img">
+                                    <img src="assets/images/colaboradores/matheusMartins.jpeg" alt="matheus martins">
+                                </div>
+                                <div class="member-info">
+                                    <h3>Matheus Martins</h3>
+                                    <h5>Consultor Empresarial</h5>
+                                    <ul>
+                                        <li>Formado em Relações Internacionais - Universidade Católica de Brasília/DF</li>
+                                        
+                                    </ul>
+                                    <div class="redeSociais">
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="member">
+                                <div class="member-img">
+                                    <img src="assets/images/colaboradores/ivandroMendes.png" alt="ivandro mendes">
+                                </div>
+                                <div class="member-info">
+                                    <h3>Ivandro Mendes</h3>
+                                    <h5>Economista</h5>
+                                    <ul>
+                                        <li>Formado em Ciências Econômicas - Instituto de Economia da Universidade de Federal de Uberlândia/MG (UFU)</li>
+                                        <li>MBA em Finanças e Planejamento Empresarial pelo Instituto de Economia da Universidade de Federal de Uberlândia/MG (UFU)</li>
+                                        
+                                    </ul>
+                                    <div class="redeSociais">
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="member">
+                                <div class="member-img">
+                                    <img src="assets/images/colaboradores/augustoCesar.png" alt="augusto cesar">
+                                </div>
+                                <div class="member-info">
+                                    <h3>Augusto César</h3>
+                                    <h5>Consultor Empresarial</h5>
+                                    <ul>
+                                        <li>Formado em Gestão Pública</li>
+                                        <li>Secretário Adjunto de Pesca da Secretaria de Pesca vinculado à Prefeitura do Município de Santana do São Francisco/SE (2023-Atual)</li>
+                                        
+                                    </ul>
+                                    <div class="redeSociais">
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          
+                          
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="autoplay-progress">
+                          <svg viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="20"></circle>
+                          </svg>
+                          <span>10s</span>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="slideshow-container">
+                     
+                        <div class="mySlides fade">
+                            <div class="member">
+                                <div class="member-img">
+                                    <img src="assets/images/colaboradores/allanLima.png" alt="Allan Lima">
+                                </div>
+                                <div class="member-info">
+                                    <h5>Allan Lima</h5>
+                                    <h6>Consultor Comercial</h6>
+                                </div>
+                            </div>
+                        </div>
+                     
+                        <div class="mySlides fade">
+                            <div class="member">
+                                <div class="member-img">
+                                    <img src="assets/images/colaboradores/andersonSales.png" alt="Anderson Sales">
+                                </div>
+                                <div class="member-info">
+                                    <h5>Anderson Sales</h5>
+                                    <h6>Sócio Fundador</h6>
+                                </div>
+                            </div>
+                        </div>
+                     
+                        <div class="mySlides fade">
+                            <div class="member">
+                                <div class="member-img">
+                                    <img src="assets/images/colaboradores/felipeTrindade.png" alt="Felipe Trindade">
+                                </div>
+                                <div class="member-info">
+                                    <h5>Felipe Trindade</h5>
+                                    <h6>Analista CNPI</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        
         <section id="testimonial1" class="testimonial testimonial-1 pt-70 bg-gray">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1">
-                        <div id="testimonial-wide" class="carousel owl-carousel" data-slide="1" data-slide-rs="1"
-                            data-autoplay="true" data-nav="false" data-dots="false" data-space="0" data-loop="true"
-                            data-speed="800">
+                        <div id="testimonial-wide" class="carousel owl-carousel" data-slide="1" data-slide-rs="1" data-autoplay="true" data-nav="false" data-dots="false" data-space="0" data-loop="true" data-speed="800">
                             <div class="testimonial-panel">
-                               
+
                                 <div class="testimonial--body">
                                     <div class="testimonial--icon2"></div>
                                     <p>Foi na Climbe Investimentos Independentes que encontrei o suporte que preciso para construir meu plano de investimentos. Para o profissional liberal, é essencial fazer reserva, e, sobretudo, saber investir, a fim de garantir um futuro tranquilo. Para isso eu conto com a Climbe ao meu lado, me orientando e me capacitando, sempre respeitando meu perfil.</p>
@@ -561,7 +895,7 @@
                                     <div class="testimonial--icon2"></div>
                                     <p>Muito bom fazer parte do grupo de investidores assessorados pela CLIMBE! Ao longo desse último ano pude testemunhar o empenho diuturno de toda a equipe na construção de um projeto que, efetivamente, transforma a vida das pessoas, através da educação financeira e do respeito ao perfil de investimentos, concedendo-lhes segurança financeira e permitindo-lhes os alicerces para a realização de seus sonhos.
 
-                                    Muito obrigado mesmo!.</p>
+                                        Muito obrigado mesmo!.</p>
                                 </div>
                                 <div class="depoimentoPessoa">
                                     <div class="testimonial--img">
@@ -608,7 +942,7 @@
                 </div>
             </div>
         </section>
-        
+
         <footer id="footer" class="footer footer-1">
             <div class="footer-widget">
                 <div class="container">
@@ -623,18 +957,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-6 col-lg-2 footer--widget widget-links">
+                        <!-- <div class="col-12 col-sm-4 col-md-6 col-lg-2 footer--widget widget-links">
                             <div class="widget-title">
                                 <h5>Sobre a Climbe</h5>
                             </div>
                             <div class="widget-content">
                                 <ul>
-                                    <li><a href="#">Quem Somos</a></li>
+                                    <li><a href="page-about.html">Quem Somos</a></li>
                                     <li><a href="#">Atendimento</a></li>
                                     <li><a href="#">Nosso Escritório</a></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="col-12 col-sm-8 col-md-6 col-lg-4 footer--widget widget-links widget-links-inline">
                             <div class="widget-title">
@@ -642,28 +976,28 @@
                             </div>
                             <div class="widget-content footerClimbe">
                                 <ul class="footerClimbe">
-                                    <li><a href="#">Valuation</a></li>
-                                    <li><a href="#">Operações de Fusões e Aquisições (M&A)</a></li>
-                                    <li><a href="#">Chief Financial Officer as a Service (CFO)</a></li>
+                                    <li><a href="#">Avaliações de Empresas (Valuation)</a></li>
+                                    <li><a href="#">Fusões e Aquisições (M&A)</a></li>
+                                    <li><a href="#">Diretoria Financeira sob Demanda (CFO)</a></li>
+                                    <li><a href="#">Diretoria Financeira sob Demanda (CFO)</a></li>
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-6 col-lg-3 footer--widget widget-newsletter">
+                        <!-- <div class="col-12 col-md-6 col-lg-3 footer--widget widget-newsletter">
                             <div class="widget-title">
                                 <h5>Mantenha-se Informado Sobre as Novidades</h5>
                             </div>
                             <div class="widget-content">
                                 <form class="form-newsletter mailchimp">
-                                    <input type="email" name="email" class="form-control"
-                                        placeholder="Inscreva-se">
+                                    <input type="email" name="email" class="form-control" placeholder="Inscreva-se">
                                     <button type="submit"><i class="fa fa-long-arrow-right"></i></button>
                                 </form>
                                 <div class="subscribe-alert"></div>
                                 <div class="clearfix"></div>
                                 <p>E receba nossas ofertas.</p>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="clearfix"></div>
                     </div>
                 </div>
@@ -673,8 +1007,7 @@
                 <div class="row">
                     <div class="col-12 col-md-12 col-md-12 text--center footer--copyright">
                         <div class="copyright">
-                            <span>© 2024, Climbe Investimentos Independentes por</span> <a
-                                href="https://www.linkedin.com/in/gustavo-trindade-9183072ab/">Gustavo Trindade</a>
+                            <span>© 2025, Climbe Investimentos Independentes por</span> <a href="https://www.linkedin.com/in/gustavo-trindade-9183072ab/">Gustavo Trindade</a>
                         </div>
                     </div>
                 </div>
@@ -688,7 +1021,7 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/functions.js"></script>
     <script src="assets/js/script.js"></script>
-    
+
     <script src="assets/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
     <script src="assets/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
     <script src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
@@ -699,8 +1032,9 @@
     <script src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
     <script src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
     <script src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-    
+
     <script src="assets/js/rsconfig.js"></script>
+    <script src="assets/js/slide.js"></script>
 </body>
 
 </html>
