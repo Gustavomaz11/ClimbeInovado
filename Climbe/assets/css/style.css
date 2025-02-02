@@ -12096,11 +12096,31 @@ footer .widget-newsletter form {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+
 	}
 	.member-img img {
-		height: 550px !important;
+		height: 600px !important;
 		width: auto !important;
 	}
+	.cartas {
+		display: flex;
+		flex-direction: row !important;
+		flex-wrap: nowrap;
+		overflow-x: scroll; /* Permite o scroll horizontal */
+		scroll-snap-type: x mandatory; /* Faz com que o scroll "pule" de item em item */
+	}
+
+	.cartas::-webkit-scrollbar {
+		display: none; /* Oculta a barra de rolagem */
+	}
+
+	.cartas .member {
+		scroll-snap-align: start; /* Alinha os itens ao início do container durante o scroll */
+	}
+	.member-info {
+		width: 350px;
+	}
+
 	.swiper{
 		height: 1250px;
 	}
@@ -12221,25 +12241,6 @@ footer .widget-newsletter form {
 	text-align: justify;
 	margin: .5rem 3rem;
 }
-
-/* .wpp {
-	width: min-content !important;
-	border-radius: 50% 50% 0 0;
-	background-color: transparent !important;
-	border: none !important;
-	box-shadow: none !important;
-
-
-} */
-
-/* .wpp2 {
-	width: min-content !important;
-	border-radius: 50% 50% 0 0;
-	background-color: transparent !important;
-	border: none !important;
-	box-shadow: none !important;
-
-} */
 
 .modal {
 	display: none;
