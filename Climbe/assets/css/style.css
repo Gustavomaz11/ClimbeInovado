@@ -12240,3 +12240,38 @@ footer .widget-newsletter form {
 	box-shadow: none !important;
 
 } */
+
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-content {
+	position: relative;
+	width: 90%;
+	max-width: 800px;
+	background: #000;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.modal-content video {
+	width: 100%;
+	height: auto;
+}
+
+.modal-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #fff;
+	font-size: 24px;
+	cursor: pointer;
+}

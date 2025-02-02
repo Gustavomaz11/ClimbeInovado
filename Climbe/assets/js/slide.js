@@ -73,3 +73,29 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error("Elemento .wpp não encontrado no DOM.");
     }
 });
+
+const openModal = document.getElementById('openModal');
+const videoModal = document.getElementById('videoModal');
+const closeModal = document.getElementById('closeModal');
+const localVideo = document.getElementById('localVideo');
+
+openModal.addEventListener('click', function (e) {
+    e.preventDefault();
+    videoModal.style.display = "flex";
+    localVideo.play();
+});
+
+closeModal.addEventListener('click', function () {
+    videoModal.style.display = "none";
+    localVideo.pause();
+    localVideo.currentTime = 0; // Reinicia o vídeo
+});
+
+// Fecha o modal ao clicar fora do conteúdo
+videoModal.addEventListener('click', function (e) {
+    if (e.target === videoModal) {
+    videoModal.style.display = "none";
+    localVideo.pause();
+    localVideo.currentTime = 0;
+    }
+});
