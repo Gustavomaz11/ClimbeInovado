@@ -12098,6 +12098,31 @@ footer .widget-newsletter form {
 		align-items: center;
 
 	}
+	.navbar-brand img{
+		width: 125px !important;
+		height: auto;
+	}
+	.slide--subheadline {
+		font-size: 15px;
+	}
+	.slide--headline {
+		font-size: 24px;
+	}
+	.counter-1 {
+		margin: 15px;
+		font-size: 15px !important;
+	}
+	.bg-section {
+		height: 120vh;
+	}
+
+	.consultation p {
+		color: #fff;
+		border: 1px solid red;
+		/* font-size: 10px; */
+		max-width: 300px;
+		
+	}
 	.member-img img {
 		height: 600px !important;
 		width: auto !important;
