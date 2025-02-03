@@ -12193,6 +12193,12 @@ footer .widget-newsletter form {
 	}
 }
 
+@media (min-height: 500px) {
+	.bg-section {
+		height: 220vh !important;
+	}
+}
+
 .contat-heading {
 	cursor: pointer;
 }
