@@ -12090,6 +12090,19 @@ footer .widget-newsletter form {
 	height: 48%;
 }
 
+@media(max-height: 651px) {
+	.bg-section {
+		height: 160vh !important;
+	}
+}
+
+@media(max-width: 1480px) {
+	.dropdown-menu li a{
+		font-size: 12px !important;
+		height: auto;
+	}
+}
+
 @media (max-width: 991px) {
 	.member {
 		display: flex;
@@ -12158,6 +12171,25 @@ footer .widget-newsletter form {
 
 	.redeSociais a i {
 		font-size: 4rem !important;
+	}
+}
+
+@media (max-width: 472px) {
+	.stars {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.star {
+		padding: 0;
+		margin: 0;
+	}
+
+	.num {
+		display: flex;
+		align-items: end !important;
+		justify-content: center;
+		height: 22vh;
 	}
 }
 
