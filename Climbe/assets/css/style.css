@@ -12199,6 +12199,12 @@ footer .widget-newsletter form {
 	}
 }
 
+@media(max-width: 1720px) {
+	.navbar-nav ul {
+		min-width: 350px !important;
+	}
+}
+
 .contat-heading {
 	cursor: pointer;
 }
